@@ -20,7 +20,7 @@
 PROGRAM    = ATmegaBOOT_168
 
 # enter the parameters for the avrdude isp tool
-ISPTOOL	   = usbtiny
+ISPTOOL	   = stk500v2
 ISPPORT	   = usb
 ISPSPEED   = -b 115200
 
@@ -65,7 +65,7 @@ override LDFLAGS       = -Wl,$(LDSECTION) -Wl,--relax -nostartfiles -Wl,-gc-sect
 OBJCOPY        = avr-objcopy
 OBJDUMP        = avr-objdump
 
-all: lilypad lilypad_resonator pro8 pro16 atmega328 ng diecimila
+all:
 
 lilypad: TARGET = lilypad
 lilypad: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>1' '-DNUM_LED_FLASHES=3'
