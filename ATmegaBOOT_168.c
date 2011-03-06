@@ -93,7 +93,7 @@
 /* 20060803: hacked by DojoCorp */
 //#define BAUD_RATE   115200
 #ifndef BAUD_RATE
-#define BAUD_RATE   19200
+#define BAUD_RATE   57600
 #endif
 
 /* SW_MAJOR and MINOR needs to be updated from time to time to avoid warning message from AVR Studio */
