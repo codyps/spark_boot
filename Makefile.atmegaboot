@@ -65,7 +65,7 @@ override LDFLAGS       = -Wl,$(LDSECTION) -Wl,--relax -nostartfiles -Wl,-gc-sect
 OBJCOPY        = avr-objcopy
 OBJDUMP        = avr-objdump
 
-all:
+all: lilypad lilypad_resonator pro8 pro16 atmega328 ng diecimila
 
 lilypad: TARGET = lilypad
 lilypad: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>1' '-DNUM_LED_FLASHES=3'
